@@ -30,7 +30,7 @@ struct ContentView: View {
                         .frame(maxWidth: 150)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
-                Button("LOGIN") {
+                Button("Login") {
                     isAcPresented = true
                 }
                 .alert("Logged", isPresented: $isAcPresented, actions: {
