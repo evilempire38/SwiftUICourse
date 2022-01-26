@@ -33,6 +33,7 @@ struct ContentView: View {
                 Button("Login") {
                     isAcPresented = true
                 }
+                .foregroundColor(.black)
                 .alert("Logged", isPresented: $isAcPresented, actions: {
                     Button("OK", role : .cancel){}
                 })
@@ -62,25 +63,15 @@ struct GroupCellView : View {
     var body: some View {
         HStack{
             Image(systemName: "person.3").modifier(ImageViewMod())
-            VStack {
-                Text(group.groupName)
+            VStack(alignment: .leading, spacing: 2) {
+                Text(group.groupName).modifier(MainTextViewMod())
+                Text("\(group.groupUserCount)").modifier(SubTextViewMod())
+                    
             }
         }
     }
 }
 
-struct ImageViewMod: ViewModifier {
-    func body(content: Content) -> some View {
-        return content
-            .scaledToFit()
-            .border(Color.blue)
-            .cornerRadius(15)
-            .frame(width: 30, height: 30, alignment: .leading)
-            .opacity(0.5)
-    }
-    }
-
-    
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
