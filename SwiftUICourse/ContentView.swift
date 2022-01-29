@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SwiftUICourse
+//  SwiftUICourse 2
 //
 //  Created by Андрей Коноплёв on 23.01.2022.
 //
