@@ -12,7 +12,7 @@ struct LoginView: View {
     @State private var login = ""
     @State private var password = ""
     @State private var isAcPresented = false
-    @State var isUserLoggedIn : Bool
+    @Binding var isUserLoggedIn : Bool
     let alertMessage : String = "Login data error"
     
     var body: some View {

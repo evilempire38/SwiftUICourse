@@ -15,7 +15,7 @@ struct StartView : View {
     var body: some View {
         NavigationView {
             HStack {
-                LoginView(isUserLoggedIn: permitToContentView)
+                LoginView(isUserLoggedIn: $permitToContentView)
                 NavigationLink(isActive: $permitToContentView) {
                     ContentView()
                 } label: {
