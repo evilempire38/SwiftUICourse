@@ -8,10 +8,12 @@
 import SwiftUI
 import UIKit
 
-struct ContentView: View {
+struct LoginView: View {
     @State private var login = ""
     @State private var password = ""
     @State private var isAcPresented = false
+    let alertMessage : String = "Login data error"
+    
     var body: some View {
         ZStack {
             Color.cyan.ignoresSafeArea()
@@ -30,26 +32,36 @@ struct ContentView: View {
                         .frame(maxWidth: 150)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                 }
-                Button("Login") {
-                    isAcPresented = true
-                }
-                .foregroundColor(.black)
-                .alert("Logged", isPresented: $isAcPresented, actions: {
-                    Button("OK", role : .cancel){}
-                })
+                Button(action : verify) {
+                    Text("Login")
+                    
+                }.foregroundColor(.black)
+                    
+                    
+                
                 
                 .padding(.top, 50)
                 .padding(.bottom, 20)
                 .disabled(login.isEmpty || password.isEmpty)
                 
             }.frame(maxWidth: 250)
+                .alert(isPresented: $isAcPresented, content: {
+                    Alert(title: Text("Warning"), message: Text(alertMessage), dismissButton: .cancel())
+                })
         }
         }
+    private func verify() {
+        if login == "Admin" && password == "1234" {
+            //segue
+        } else {
+            isAcPresented = true
+        }
+    }
     }
 
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView()
+            LoginView()
         }
     }
 
