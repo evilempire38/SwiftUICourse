@@ -11,6 +11,7 @@ import SwiftUI
 struct StartView : View {
     
     @State private var permitToContentView : Bool = false
+    @State private var titleText : String = ""
     
     var body: some View {
         NavigationView {
@@ -23,6 +24,6 @@ struct StartView : View {
                 }
 
             }
-        }
+        }.navigationTitle(Text(titleText))
     }
 }

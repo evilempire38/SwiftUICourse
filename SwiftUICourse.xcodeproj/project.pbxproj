@@ -53,8 +53,8 @@
 		9A13D2AC27A9A44C002064CE /* ContentViews */ = {
 			isa = PBXGroup;
 			children = (
-				9A13D2A427A98257002064CE /* UserCellView.swift */,
-				9A13D2A627A98278002064CE /* GroupCellView.swift */,
+				9A13D2AA27A9A0F7002064CE /* ContentView.swift */,
+				9A705ABB27A9BFB900AB95D9 /* CellViews */,
 				9A13D2AF27A9A486002064CE /* FriendsListView.swift */,
 				9A13D2AD27A9A47A002064CE /* CommunityListView.swift */,
 				9A13D2B127A9A4AC002064CE /* NewsFeedView.swift */,
@@ -89,7 +89,6 @@
 				9A0D784027A190B400804E8E /* Mods.swift */,
 				9A696025279D8CA1008B2CD5 /* Assets.xcassets */,
 				9A696027279D8CA1008B2CD5 /* Preview Content */,
-				9A13D2AA27A9A0F7002064CE /* ContentView.swift */,
 			);
 			path = SwiftUICourse;
 			sourceTree = "<group>";
@@ -100,6 +99,15 @@
 				9A696028279D8CA1008B2CD5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		9A705ABB27A9BFB900AB95D9 /* CellViews */ = {
+			isa = PBXGroup;
+			children = (
+				9A13D2A427A98257002064CE /* UserCellView.swift */,
+				9A13D2A627A98278002064CE /* GroupCellView.swift */,
+			);
+			path = CellViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
