@@ -10,15 +10,24 @@ import SwiftUI
 
 
 struct GroupCellView : View {
-    let group = GroupModel(groupName: "Automative", groupUserCount: 45567)
+    let group : GroupModel
+    
     var body: some View {
         HStack{
-            Image(systemName: "person.3").modifier(ImageViewMod())
+            
+            Image(group.image)
+                .resizable()
+                .modifier(ImageViewMod())
             VStack(alignment: .leading, spacing: 2) {
                 Text(group.groupName).modifier(MainTextViewMod())
                 Text("\(group.groupUserCount)").modifier(SubTextViewMod())
                     
             }
         }
+    }
+}
+struct MyPreviewProvider_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
     }
 }

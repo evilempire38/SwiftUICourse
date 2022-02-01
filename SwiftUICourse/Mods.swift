@@ -9,20 +9,19 @@ import Foundation
 import SwiftUI
 
 struct ImageViewMod: ViewModifier {
+    
     func body(content: Content) -> some View {
         return content
             .scaledToFit()
             .border(Color.blue)
             .cornerRadius(15)
             .frame(width: 30, height: 30, alignment: .leading)
-            .opacity(0.5)
     }
     }
 struct MainTextViewMod : ViewModifier {
     func body(content: Content) -> some View {
         return content
             .foregroundColor(.black)
-            .background(Color.brown)
             .cornerRadius(10)
     }
 }

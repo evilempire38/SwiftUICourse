@@ -7,13 +7,19 @@
 
 import Foundation
 
-struct UserModel {
+struct UserModel : Identifiable {
+    var id: UUID = UUID()
+    
     var name : String
     var surname : String
+    var image : String
     
 }
 
-struct GroupModel {
+struct GroupModel : Identifiable {
+    var id: UUID = UUID()
+    
     var groupName : String
     var groupUserCount: Int
+    var image : String
 }

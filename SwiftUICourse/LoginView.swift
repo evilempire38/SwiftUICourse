@@ -12,6 +12,7 @@ struct LoginView: View {
     @State private var login = ""
     @State private var password = ""
     @State private var isAcPresented = false
+    @State var isUserLoggedIn : Bool
     let alertMessage : String = "Login data error"
     
     var body: some View {
@@ -52,16 +53,12 @@ struct LoginView: View {
         }
     private func verify() {
         if login == "Admin" && password == "1234" {
-            //segue
+            isUserLoggedIn = true
         } else {
             isAcPresented = true
         }
     }
     }
 
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            LoginView()
-        }
-    }
+
 
