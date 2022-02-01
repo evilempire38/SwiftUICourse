@@ -47,37 +47,9 @@ struct ContentView: View {
         }
     }
 
-struct UserCellView : View {
-    let user = UserModel(name: "Fedor", surname: "Fedorov")
-    
-    var body: some View {
-        HStack(alignment: .center, spacing: 8) {
-            Image(systemName: "person.fill").modifier(ImageViewMod())
-            Text(user.name + " " + user.surname)
-        } .frame(width: 250, height: 50, alignment: .center)
-    }
-}
-
-struct GroupCellView : View {
-    let group = GroupModel(groupName: "Automative", groupUserCount: 45567)
-    var body: some View {
-        HStack{
-            Image(systemName: "person.3").modifier(ImageViewMod())
-            VStack(alignment: .leading, spacing: 2) {
-                Text(group.groupName).modifier(MainTextViewMod())
-                Text("\(group.groupUserCount)").modifier(SubTextViewMod())
-                    
-            }
-        }
-    }
-}
-
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
-            UserCellView()
-            GroupCellView()
-            
         }
     }
 
