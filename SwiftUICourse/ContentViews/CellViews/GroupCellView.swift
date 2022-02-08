@@ -10,6 +10,7 @@ import SwiftUI
 
 
 struct GroupCellView : View {
+    @State private var isScaled : Bool = false
     let group : GroupModel
     
     var body: some View {
@@ -18,6 +19,7 @@ struct GroupCellView : View {
             Image(group.image)
                 .resizable()
                 .modifier(ImageViewMod())
+                .modifier(AnimateMainImage())
             VStack(alignment: .leading, spacing: 2) {
                 Text(group.groupName).modifier(MainTextViewMod())
                 Text("\(group.groupUserCount)").modifier(SubTextViewMod())

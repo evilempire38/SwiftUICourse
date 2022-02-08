@@ -32,3 +32,18 @@ struct SubTextViewMod: ViewModifier {
             
     }
 }
+struct AnimateMainImage : ViewModifier {
+    @State private var offset : CGFloat = 0
+    func body(content: Content) -> some View {
+        return content
+            .offset(x: 0.0, y: offset)
+            .onTapGesture {
+                withAnimation(.interpolatingSpring(stiffness: 350, damping: 5, initialVelocity: 10)) {
+                    self.offset = -8
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.4) {
+                        self.offset = 0.0
+                    }
+                }
+            }
+    }
+}

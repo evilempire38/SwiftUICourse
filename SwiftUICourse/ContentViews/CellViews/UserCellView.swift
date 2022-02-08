@@ -10,17 +10,16 @@ import SwiftUI
 
 struct UserCellView : View {
     let friend : UserModel
-    
     var body: some View {
         HStack {
             Image(friend.image)
                 .resizable()
                 .modifier(ImageViewMod())
-            
+                .modifier(AnimateMainImage())
             Text(friend.name + " " + friend.surname)
-
+            
+        }
     }
 }
-}
- 
+
 
