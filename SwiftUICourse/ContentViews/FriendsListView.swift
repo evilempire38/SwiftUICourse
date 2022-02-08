@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import ASCollectionView
 
 struct FriendsList : View {
     
@@ -21,8 +22,10 @@ struct FriendsList : View {
     var body: some View {
         
         List(friendsList) { friend in
-            UserCellView(friend: friend)
-            
+            NavigationLink(destination: DetailFriendsListView(friend: friend)) {
+                UserCellView(friend: friend)
+            }
+  
         }
     }
 }
