@@ -8,17 +8,21 @@
 import Foundation
 import SwiftUI
 import UIKit
+import Kingfisher
 
 struct  DetailFriendImageCell : View {
     let friend : FriendsJsonData
+
     @State private var likeCount : Int = 0
     @State private var systemImageName : String = "heart"
     
     
+    
     var body: some View {
+        let imageForKF = URL(string: friend.photo50)
         VStack(alignment: .center) {
-            Text(friend.firstName + friend.lastName)
-            Image(friend.photo50)
+            Text(friend.firstName + " " + friend.lastName)
+            KFImage(imageForKF)
                 .resizable()
                 .foregroundColor(.black)
                 .frame(width: 100, height: 100, alignment: .leading)

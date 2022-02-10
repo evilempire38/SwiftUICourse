@@ -7,22 +7,24 @@
 
 import Foundation
 import SwiftUI
+import Kingfisher
 
 
 struct GroupCellView : View {
     @State private var isScaled : Bool = false
-    let group : GroupModel
+    let group : CommunityJSONData
     
     var body: some View {
+        let image = URL(string: group.photo50)
         HStack{
             
-            Image(group.image)
+            KFImage(image)
                 .resizable()
                 .modifier(ImageViewMod())
                 .modifier(AnimateMainImage())
             VStack(alignment: .leading, spacing: 2) {
-                Text(group.groupName).modifier(MainTextViewMod())
-                Text("\(group.groupUserCount)").modifier(SubTextViewMod())
+                Text(group.name).modifier(MainTextViewMod())
+                Text("\(group.id)").modifier(SubTextViewMod())
                     
             }
         }

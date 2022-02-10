@@ -10,7 +10,7 @@ import ASCollectionView
 
 struct DetailFriendsListView : View {
     
-    var friend : FriendsJsonData
+     var friend : FriendsJsonData
     
     @State private var friendsList : [UserModel] =
     [UserModel(name: "Fedor", surname: "Gromov", image: "mb"),
