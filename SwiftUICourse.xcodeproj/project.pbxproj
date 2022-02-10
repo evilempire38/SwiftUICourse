@@ -24,7 +24,6 @@
 		9A72220C27B4EDBB00731EAA /* FriendsResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72220B27B4EDBB00731EAA /* FriendsResponseModel.swift */; };
 		9A72220F27B4EEB800731EAA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72220E27B4EEB800731EAA /* NetworkService.swift */; };
 		9A72221127B4F09900731EAA /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221027B4F09900731EAA /* VKLoginWebView.swift */; };
-		9A72221327B4F18300731EAA /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221227B4F18300731EAA /* Token.swift */; };
 		9AF9199427B2B07C007DEE61 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 9AF9199327B2B07C007DEE61 /* ASCollectionView */; };
 		9AF9199627B2B2C3007DEE61 /* DetailFriendImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9199527B2B2C3007DEE61 /* DetailFriendImageCell.swift */; };
 /* End PBXBuildFile section */
@@ -48,7 +47,6 @@
 		9A72220B27B4EDBB00731EAA /* FriendsResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsResponseModel.swift; sourceTree = "<group>"; };
 		9A72220E27B4EEB800731EAA /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		9A72221027B4F09900731EAA /* VKLoginWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKLoginWebView.swift; sourceTree = "<group>"; };
-		9A72221227B4F18300731EAA /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
 		9AF9199527B2B2C3007DEE61 /* DetailFriendImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFriendImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -133,7 +131,6 @@
 			children = (
 				9A0D783E27A189DC00804E8E /* Models.swift */,
 				9A72220B27B4EDBB00731EAA /* FriendsResponseModel.swift */,
-				9A72221227B4F18300731EAA /* Token.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -237,7 +234,6 @@
 				9A13D2B227A9A4AC002064CE /* NewsFeedView.swift in Sources */,
 				9A696022279D8CA0008B2CD5 /* SwiftUICourseApp.swift in Sources */,
 				9A72220C27B4EDBB00731EAA /* FriendsResponseModel.swift in Sources */,
-				9A72221327B4F18300731EAA /* Token.swift in Sources */,
 				9A45D11227B2A63400751C60 /* DetailFriendsListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
