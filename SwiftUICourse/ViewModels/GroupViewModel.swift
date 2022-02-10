@@ -8,6 +8,7 @@
 import Foundation
 
 class GroupViewModel : ObservableObject {
+    
     var groupList : [CommunityJSONData] = []
     internal let objectWillChange =  ObjectWillChangePublisher()
     let networkService = NetworkService()

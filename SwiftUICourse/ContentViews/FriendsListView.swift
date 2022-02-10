@@ -22,7 +22,8 @@ struct FriendsList : View {
                 UserCellView(friend: friend)
             }
   
-        }.onAppear {
+        }
+        .onAppear {
             viewModel.fetchFriends()
         }
     }
