@@ -15,21 +15,31 @@ struct ContentView : View {
     
     var body: some View {
         TabView {
-            FriendsList(viewModel: friendViewModel)
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Друзья")
-                }
-            GroupList(viewModel: groupViewModel)
-                .tabItem {
-                    Image(systemName: "person.crop.rectangle.stack.fill")
-                    Text("Cообщества")
-                }
-            NewsFeedView()
-                .tabItem {
-                    Image(systemName: "text.bubble.fill")
-                    Text("Лента новостей")
-                }
+            NavigationView {
+                
+                FriendsList(viewModel: friendViewModel)
+            }
+                    .tabItem {
+                        Image(systemName: "person")
+                        Text("Друзья")
+                    }
+            
+            
+            NavigationView {
+                GroupList(viewModel: groupViewModel)
+            }
+                    .tabItem {
+                        Image(systemName: "person.crop.rectangle.stack.fill")
+                        Text("Cообщества")
+                    }
+            
+            NavigationView {
+                NewsFeedView()}
+                    .tabItem {
+                        Image(systemName: "text.bubble.fill")
+                        Text("Лента новостей")
+                    }
+            
         }
     }
 }
