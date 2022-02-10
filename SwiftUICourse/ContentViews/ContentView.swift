@@ -10,11 +10,11 @@ import SwiftUI
 
 
 struct ContentView : View {
-    
+    private let friendViewModel = FriendModelView()
     
     var body: some View {
         TabView {
-            FriendsList()
+            FriendsList(viewModel: friendViewModel)
                 .tabItem {
                     Image(systemName: "person")
                     Text("Друзья")

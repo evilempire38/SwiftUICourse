@@ -10,15 +10,15 @@ import SwiftUI
 import UIKit
 
 struct  DetailFriendImageCell : View {
-    let friend : UserModel
+    let friend : FriendsJsonData
     @State private var likeCount : Int = 0
     @State private var systemImageName : String = "heart"
     
     
     var body: some View {
         VStack(alignment: .center) {
-            Text(friend.name + friend.surname)
-            Image(friend.image)
+            Text(friend.firstName + friend.lastName)
+            Image(friend.photo50)
                 .resizable()
                 .foregroundColor(.black)
                 .frame(width: 100, height: 100, alignment: .leading)

@@ -10,28 +10,22 @@ import SwiftUI
 import ASCollectionView
 
 struct FriendsList : View {
+    @ObservedObject var viewModel : FriendModelView
     
-
-    @State private var friendsList : [UserModel] =
-    [UserModel(name: "Fedor", surname: "Gromov", image: "mb"),
-     
-     UserModel(name: "Anatoly", surname: "Fedotov", image: "bmw"),
-     
-     UserModel(name: "Tatiana", surname: "Morozova", image: "porche")]
-    
+    init(viewModel : FriendModelView) {
+        self.viewModel = viewModel
+    }
     var body: some View {
         
-        List(friendsList) { friend in
+        List(viewModel.friends) { friend in
             NavigationLink(destination: DetailFriendsListView(friend: friend)) {
                 UserCellView(friend: friend)
             }
   
+        }.onAppear {
+            viewModel.fetchFriends()
         }
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        FriendsList()
-    }
-}
+
