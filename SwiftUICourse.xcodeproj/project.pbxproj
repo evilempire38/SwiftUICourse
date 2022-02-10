@@ -28,6 +28,7 @@
 		9A72221927B5053400731EAA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9A72221827B5053400731EAA /* Kingfisher */; };
 		9A72221B27B50E5300731EAA /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221A27B50E5300731EAA /* GroupViewModel.swift */; };
 		9A72221D27B50E8800731EAA /* CommunityResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221C27B50E8800731EAA /* CommunityResponseModel.swift */; };
+		9A72221F27B53ECB00731EAA /* MyPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221E27B53ECB00731EAA /* MyPropertyWrapper.swift */; };
 		9AF9199427B2B07C007DEE61 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 9AF9199327B2B07C007DEE61 /* ASCollectionView */; };
 		9AF9199627B2B2C3007DEE61 /* DetailFriendImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9199527B2B2C3007DEE61 /* DetailFriendImageCell.swift */; };
 /* End PBXBuildFile section */
@@ -54,6 +55,7 @@
 		9A72221527B500CD00731EAA /* FriendModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModelView.swift; sourceTree = "<group>"; };
 		9A72221A27B50E5300731EAA /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
 		9A72221C27B50E8800731EAA /* CommunityResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityResponseModel.swift; sourceTree = "<group>"; };
+		9A72221E27B53ECB00731EAA /* MyPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPropertyWrapper.swift; sourceTree = "<group>"; };
 		9AF9199527B2B2C3007DEE61 /* DetailFriendImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFriendImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				9A0D784027A190B400804E8E /* Mods.swift */,
 				9A696025279D8CA1008B2CD5 /* Assets.xcassets */,
 				9A696027279D8CA1008B2CD5 /* Preview Content */,
+				9A72221E27B53ECB00731EAA /* MyPropertyWrapper.swift */,
 			);
 			path = SwiftUICourse;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			files = (
 				9A0D784127A190B400804E8E /* Mods.swift in Sources */,
 				9A72221D27B50E8800731EAA /* CommunityResponseModel.swift in Sources */,
+				9A72221F27B53ECB00731EAA /* MyPropertyWrapper.swift in Sources */,
 				9A13D2B027A9A486002064CE /* FriendsListView.swift in Sources */,
 				9A72221B27B50E5300731EAA /* GroupViewModel.swift in Sources */,
 				9A72221127B4F09900731EAA /* VKLoginWebView.swift in Sources */,
