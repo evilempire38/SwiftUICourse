@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-import ASCollectionView
+
 
 struct FriendsList : View {
     @ObservedObject var viewModel : FriendModelView
@@ -18,7 +18,7 @@ struct FriendsList : View {
     var body: some View {
         
         List(viewModel.friends) { friend in
-            NavigationLink(destination: DetailFriendsListView(friend: friend)) {
+            NavigationLink(destination: DetailFriendsListView(friend: friend).environmentObject(viewModel)) {
                 UserCellView(friend: friend)
             }
   

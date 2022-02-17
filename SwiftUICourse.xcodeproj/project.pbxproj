@@ -25,11 +25,12 @@
 		9A72220F27B4EEB800731EAA /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72220E27B4EEB800731EAA /* NetworkService.swift */; };
 		9A72221127B4F09900731EAA /* VKLoginWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221027B4F09900731EAA /* VKLoginWebView.swift */; };
 		9A72221627B500CD00731EAA /* FriendModelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221527B500CD00731EAA /* FriendModelView.swift */; };
-		9A72221927B5053400731EAA /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9A72221827B5053400731EAA /* Kingfisher */; };
 		9A72221B27B50E5300731EAA /* GroupViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221A27B50E5300731EAA /* GroupViewModel.swift */; };
 		9A72221D27B50E8800731EAA /* CommunityResponseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221C27B50E8800731EAA /* CommunityResponseModel.swift */; };
-		9AF9199427B2B07C007DEE61 /* ASCollectionView in Frameworks */ = {isa = PBXBuildFile; productRef = 9AF9199327B2B07C007DEE61 /* ASCollectionView */; };
+		9A72221F27B53ECB00731EAA /* MyPropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A72221E27B53ECB00731EAA /* MyPropertyWrapper.swift */; };
+		9AD8DA2627BE50A7004C3355 /* MyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AD8DA2527BE50A7004C3355 /* MyTabBar.swift */; };
 		9AF9199627B2B2C3007DEE61 /* DetailFriendImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF9199527B2B2C3007DEE61 /* DetailFriendImageCell.swift */; };
+		9AFAA20227BEA8AD00B90648 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 9AFAA20127BEA8AD00B90648 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,8 @@
 		9A72221527B500CD00731EAA /* FriendModelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModelView.swift; sourceTree = "<group>"; };
 		9A72221A27B50E5300731EAA /* GroupViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupViewModel.swift; sourceTree = "<group>"; };
 		9A72221C27B50E8800731EAA /* CommunityResponseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityResponseModel.swift; sourceTree = "<group>"; };
+		9A72221E27B53ECB00731EAA /* MyPropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPropertyWrapper.swift; sourceTree = "<group>"; };
+		9AD8DA2527BE50A7004C3355 /* MyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTabBar.swift; sourceTree = "<group>"; };
 		9AF9199527B2B2C3007DEE61 /* DetailFriendImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailFriendImageCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -62,8 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9A72221927B5053400731EAA /* Kingfisher in Frameworks */,
-				9AF9199427B2B07C007DEE61 /* ASCollectionView in Frameworks */,
+				9AFAA20227BEA8AD00B90648 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,8 +113,10 @@
 				9A13D2AC27A9A44C002064CE /* ContentViews */,
 				9A696021279D8CA0008B2CD5 /* SwiftUICourseApp.swift */,
 				9A0D784027A190B400804E8E /* Mods.swift */,
+				9A72221E27B53ECB00731EAA /* MyPropertyWrapper.swift */,
 				9A696025279D8CA1008B2CD5 /* Assets.xcassets */,
 				9A696027279D8CA1008B2CD5 /* Preview Content */,
+				9AD8DA2527BE50A7004C3355 /* MyTabBar.swift */,
 			);
 			path = SwiftUICourse;
 			sourceTree = "<group>";
@@ -179,8 +183,7 @@
 			);
 			name = SwiftUICourse;
 			packageProductDependencies = (
-				9AF9199327B2B07C007DEE61 /* ASCollectionView */,
-				9A72221827B5053400731EAA /* Kingfisher */,
+				9AFAA20127BEA8AD00B90648 /* Kingfisher */,
 			);
 			productName = SwiftUICourse;
 			productReference = 9A69601E279D8CA0008B2CD5 /* SwiftUICourse.app */;
@@ -211,8 +214,7 @@
 			);
 			mainGroup = 9A696015279D8CA0008B2CD5;
 			packageReferences = (
-				9AF9199227B2B07C007DEE61 /* XCRemoteSwiftPackageReference "ASCollectionView" */,
-				9A72221727B5053400731EAA /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				9AFAA20027BEA8AD00B90648 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = 9A69601F279D8CA0008B2CD5 /* Products */;
 			projectDirPath = "";
@@ -242,6 +244,7 @@
 			files = (
 				9A0D784127A190B400804E8E /* Mods.swift in Sources */,
 				9A72221D27B50E8800731EAA /* CommunityResponseModel.swift in Sources */,
+				9A72221F27B53ECB00731EAA /* MyPropertyWrapper.swift in Sources */,
 				9A13D2B027A9A486002064CE /* FriendsListView.swift in Sources */,
 				9A72221B27B50E5300731EAA /* GroupViewModel.swift in Sources */,
 				9A72221127B4F09900731EAA /* VKLoginWebView.swift in Sources */,
@@ -256,6 +259,7 @@
 				9A13D2A927A9A07D002064CE /* StartView.swift in Sources */,
 				9A72220F27B4EEB800731EAA /* NetworkService.swift in Sources */,
 				9A13D2B227A9A4AC002064CE /* NewsFeedView.swift in Sources */,
+				9AD8DA2627BE50A7004C3355 /* MyTabBar.swift in Sources */,
 				9A696022279D8CA0008B2CD5 /* SwiftUICourseApp.swift in Sources */,
 				9A72220C27B4EDBB00731EAA /* FriendsResponseModel.swift in Sources */,
 				9A45D11227B2A63400751C60 /* DetailFriendsListView.swift in Sources */,
@@ -463,7 +467,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9A72221727B5053400731EAA /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+		9AFAA20027BEA8AD00B90648 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
 			requirement = {
@@ -471,26 +475,13 @@
 				kind = branch;
 			};
 		};
-		9AF9199227B2B07C007DEE61 /* XCRemoteSwiftPackageReference "ASCollectionView" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/apptekstudios/ASCollectionView";
-			requirement = {
-				kind = upToNextMinorVersion;
-				minimumVersion = 2.1.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9A72221827B5053400731EAA /* Kingfisher */ = {
+		9AFAA20127BEA8AD00B90648 /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9A72221727B5053400731EAA /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			package = 9AFAA20027BEA8AD00B90648 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
-		};
-		9AF9199327B2B07C007DEE61 /* ASCollectionView */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9AF9199227B2B07C007DEE61 /* XCRemoteSwiftPackageReference "ASCollectionView" */;
-			productName = ASCollectionView;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

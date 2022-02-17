@@ -14,22 +14,23 @@ struct ContentView : View {
     private let groupViewModel = GroupViewModel()
     
     var body: some View {
-        TabView {
-            FriendsList(viewModel: friendViewModel)
-                .tabItem {
-                    Image(systemName: "person")
-                    Text("Друзья")
+        
+        MyTBWrapper([
+            TabBarElement(tabBarElementItem: .init(title: "Друзья", systemImageName: "person")) {
+                NavigationView {
+                    FriendsList(viewModel: friendViewModel)
                 }
-            GroupList(viewModel: groupViewModel)
-                .tabItem {
-                    Image(systemName: "person.crop.rectangle.stack.fill")
-                    Text("Cообщества")
+            },
+            TabBarElement(tabBarElementItem: .init(title: "Сообщества", systemImageName: "person.crop.rectangle.stack.fill")) {
+                NavigationView {
+                    GroupList(viewModel: groupViewModel)
                 }
-            NewsFeedView()
-                .tabItem {
-                    Image(systemName: "text.bubble.fill")
-                    Text("Лента новостей")
+            },
+            TabBarElement(tabBarElementItem: .init(title: "Лента новостей", systemImageName: "text.bubble.fill")) {
+                NavigationView {
+                    NewsFeedView()
                 }
-        }
+            }])
+        
     }
 }
