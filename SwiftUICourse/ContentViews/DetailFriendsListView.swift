@@ -6,21 +6,12 @@
 //
 
 import SwiftUI
-import ASCollectionView
+
 
 struct DetailFriendsListView : View {
-    
+
      var friend : FriendsJsonData
     @State private var scale : CGFloat = 1.0
-    
-    @State private var friendsList : [UserModel] =
-    [UserModel(name: "Fedor", surname: "Gromov", image: "mb"),
-     
-     UserModel(name: "Anatoly", surname: "Fedotov", image: "bmw"),
-     
-     UserModel(name: "Tatiana", surname: "Morozova", image: "porche")]
-    
-    
     
     var body: some View {
         ScrollView {
@@ -34,6 +25,7 @@ struct DetailFriendsListView : View {
         }
     }
 }
+
 extension DetailFriendsListView {
     var userAvatar: some View {
         AsyncImage(url: friend.urlForImage) { image in
@@ -43,7 +35,7 @@ extension DetailFriendsListView {
         }
         .frame(width: 100 * scale, height: 100 * scale)
     }
-    
+
     var name : some View {
         Text(friend.fullname)
     }
