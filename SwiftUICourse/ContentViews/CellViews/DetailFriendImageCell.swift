@@ -10,6 +10,7 @@ import SwiftUI
 import UIKit
 import Kingfisher
 
+
 struct  DetailFriendImageCell : View {
     let friend : FriendsJsonData
 

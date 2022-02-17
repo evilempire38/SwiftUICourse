@@ -18,7 +18,7 @@ struct DetailFriendsListView : View {
             VStack(alignment: .center)  {
                 userAvatar
                 name
-                CurrentFriendView()
+                CurrentFriendView(friend: friend)
                 Spacer()
             }
             .navigationTitle(Text(friend.firstName))
@@ -43,7 +43,7 @@ extension DetailFriendsListView {
 
 
  struct CurrentFriendView : View {
-    var friend: FriendsResponse
+    var friend: FriendsJsonData
     @EnvironmentObject var viewModel: FriendModelView
 
     private let columns = [
@@ -51,24 +51,25 @@ extension DetailFriendsListView {
     ]
 
     var body: some View {
-        LazyVGrid(columns: columns, spacing: 15) {
-            ForEach(viewModel.friends, id: \.self) { myData in
-                let imgURL = myData.urlForImage
-                {
-                    AsyncImage(url: imgURL) { image in
-                        image
-                            .resizable()
-                            .scaledToFit()
-                    } placeholder: {
-                        ProgressView()
-                    }
-                }
-            }
-        }
-        .onAppear {
-            viewModel.fetchGallery(ownerId: Int(friend.id))
-        }
-    }
+//        Text("playte")
+//        LazyVGrid(columns: columns, spacing: 15) {
+//            ForEach(viewModel.friends, id: \.self) { myData in
+//                let imgURL = myData.urlForImage
+//                {
+//                    AsyncImage(url: imgURL) { image in
+//                        image
+//                            .resizable()
+//                            .scaledToFit()
+//                    } placeholder: {
+//                        ProgressView()
+//                    }
+//                }
+//            }
+//        }
+//        .onAppear {
+//            viewModel.fetchFriends()
+//        }
+//    }
 }
 
 

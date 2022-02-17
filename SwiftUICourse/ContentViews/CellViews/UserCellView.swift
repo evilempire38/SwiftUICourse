@@ -9,6 +9,7 @@ import Foundation
 import SwiftUI
 import Kingfisher
 
+
 struct UserCellView : View {
     
     let friend : FriendsJsonData

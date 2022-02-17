@@ -7,7 +7,7 @@
 
 import Foundation
 import SwiftUI
-import ASCollectionView
+
 
 struct FriendsList : View {
     @ObservedObject var viewModel : FriendModelView
