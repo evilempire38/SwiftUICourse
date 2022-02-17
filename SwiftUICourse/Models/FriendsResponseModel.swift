@@ -21,6 +21,15 @@ struct FriendsJsonData : Identifiable {
     let lastName : String
     let photo50 : String
 }
+extension FriendsJsonData {
+    var fullname : String {
+        return firstName + " " + lastName
+    }
+    var urlForImage : URL? {
+        return URL(string: photo50)
+    }
+    
+}
 extension FriendsJsonData : Decodable {
     
     enum CodingKeys : String, CodingKey {

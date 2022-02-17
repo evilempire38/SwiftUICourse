@@ -18,8 +18,14 @@ struct GroupCellView : View {
         let image = URL(string: group.photo50)
         HStack{
             
-            KFImage(image)
-                .resizable()
+            AsyncImage(url: image) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+            } placeholder: {
+                ProgressView()
+            }
+                
                 .modifier(ImageViewMod())
                 .modifier(AnimateMainImage())
             VStack(alignment: .leading, spacing: 2) {
